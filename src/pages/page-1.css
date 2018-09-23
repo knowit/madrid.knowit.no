@@ -1,0 +1,53 @@
+.intro>a svg {
+  height: 48px;
+  width: 48px;
+}
+
+.intro .arrow {
+  margin: 0 auto;
+}
+
+.intro img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.nav-button-group {
+  margin: 2rem auto;
+}
+
+.page h1, .page p {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  min-height: 100vh;
+  background-color: var(--gray-1);
+
+  position: relative;
+  z-index: 33;
+}
+
+.page.intro {
+  background-color: var(--light-blue);
+  justify-content: space-between;
+}
+
+.intro:first-child {
+  padding-top: 1rem;
+}
+
+
+.page .button {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.page .button-group {
+  margin: 2rem auto;
+}

@@ -1,0 +1,62 @@
+.container {
+  padding: 0 20%;
+}
+
+.slot, .entries {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: row;
+}
+
+.slot .time {
+  align-self: center;
+  width: 10%;
+}
+
+.slot .title {
+  padding: 1rem 0;
+  font-weight: bold;
+  width: 90%;
+}
+
+
+.slot.gray-background .title {
+    text-align: center;
+    background-color: var(--gray-1);
+    color: black;
+}
+
+.slot.white-background .title {
+  border: 1px solid var(--gray-1);
+  background-color: white;
+  color: black;
+}
+
+.slot.white-background .title > span {
+  padding: 2rem;
+  display: inline-block;
+}
+
+@media (--medium-viewport) {
+  .slot,
+  .slot .entries {
+    flex-flow: column;
+  }
+  .slot .time {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .slot .title {
+    padding: 1rem 0;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .slot.white-background .title {
+    border-left: none;
+    border-right: none;
+  }
+}
