@@ -5,7 +5,7 @@ Created with [Gatsby](https://www.gatsbyjs.org/).
 ## Before commit
 Run prettier to pretify the code.
 ```sh
-yarn prettier
+yarn format
 ```
 
 ## Install gatsby
@@ -25,7 +25,7 @@ gatsby develop
 
 To build, run:
 ```sh
-yarn build
+gatsby build
 ```
 
 To deploy, run:
