@@ -12,9 +12,9 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title,
+            title
             data {
-              title,
+              title
               keywords
             }
           }
@@ -27,11 +27,18 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: data.site.siteMetadata.data.title },
-            { name: 'keywords', content: data.site.siteMetadata.data.keywords.join(',') },
+            {
+              name: 'keywords',
+              content: data.site.siteMetadata.data.keywords.join(','),
+            },
           ]}
         >
           <html lang="no" />
-          <link data-react-helmet="true" href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+          <link
+            data-react-helmet="true"
+            href="https://fonts.googleapis.com/css?family=Raleway"
+            rel="stylesheet"
+          />
         </Helmet>
         <div>
           {children}

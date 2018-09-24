@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const OtherSlot = ({ collection }) => {
   return (
@@ -9,11 +9,11 @@ const OtherSlot = ({ collection }) => {
         <span>{collection.title}</span>
       </div>
     </div>
-  );
-};
+  )
+}
 
 OtherSlot.propTypes = {
   collection: PropTypes.object,
-};
+}
 
-export default OtherSlot;
+export default OtherSlot

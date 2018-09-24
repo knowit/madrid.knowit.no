@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 import Talks from '../Talks/Talks'
 
 const EntriesSlot = ({ collection }) => {
@@ -12,11 +12,11 @@ const EntriesSlot = ({ collection }) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
 EntriesSlot.propTypes = {
   collection: PropTypes.array,
-};
+}
 
-export default EntriesSlot;
+export default EntriesSlot

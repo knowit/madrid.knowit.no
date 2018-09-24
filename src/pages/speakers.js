@@ -12,12 +12,12 @@ const SpeakersPage = () => (
       query SiteSpeakersQuery {
         site {
           siteMetadata {
-            title,
+            title
             data {
-              title,
+              title
               event {
-                date,
-                city,
+                date
+                city
                 country
               }
             }
@@ -32,12 +32,21 @@ const SpeakersPage = () => (
             <img alt="Madrid konferanse logo" src="./static/madcon.png" />
             <h1>{data.site.siteMetadata.data.title}</h1>
             <div>
-              <p className="white">Tid: {data.site.siteMetadata.data.event.date}</p>
-              <p className="white">Sted: {data.site.siteMetadata.data.event.city}, {data.site.siteMetadata.data.event.country}</p>
+              <p className="white">
+                Tid: {data.site.siteMetadata.data.event.date}
+              </p>
+              <p className="white">
+                Sted: {data.site.siteMetadata.data.event.city},{' '}
+                {data.site.siteMetadata.data.event.country}
+              </p>
             </div>
             <div className="button-group">
-              <Link className="button white" to="/speakers/">Talere</Link>
-              <Link className="button white" to="/schedule/">Skjema</Link>
+              <Link className="button white" to="/speakers/">
+                Talere
+              </Link>
+              <Link className="button white" to="/schedule/">
+                Skjema
+              </Link>
             </div>
             <a href="#info" className="arrow">
               <Arrow />
@@ -47,13 +56,17 @@ const SpeakersPage = () => (
             <h2>Informasjon</h2>
             <p>
               Knowit Stavanger arrangerer fagseminar årlig. Det er de ansatte
-              selv som lager programmet. Høsten 2018 vil den bli avholdt 25. oktober -
-              28. oktober 2018 i Madrid, Spania.
+              selv som lager programmet. Høsten 2018 vil den bli avholdt 25.
+              oktober - 28. oktober 2018 i Madrid, Spania.
             </p>
+            <p>Tidligere har vi besøkt bl.a. Berlin, Lofoten, Praha, Kiel.</p>
             <p>
-              Tidligere har vi besøkt bl.a. Berlin, Lofoten, Praha, Kiel.
+              Alle rom markert med{' '}
+              <span role="img" aria-label="kamera">
+                🎥
+              </span>{' '}
+              vil bli filmet.
             </p>
-            <p>Alle rom markert med <span role="img" aria-label="kamera">🎥</span> vil bli filmet.</p>
           </div>
         </div>
       </Layout>

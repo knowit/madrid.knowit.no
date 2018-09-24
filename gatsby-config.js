@@ -7,16 +7,17 @@ module.exports = {
       keywords: ['knowit', 'fagseminar', 'stavanger', 'madrid', '2018'],
       // keywords: 'knowit',
       event: {
-          date: '25. oktober - 28. oktober 2018',
-          longDate: '25. oktober - 28. oktober 2018',
-          venue: 'Meliá Castilla, Calle del Poeta Joan Maragall, 43, Madrid, España',
-          hotel: 'Meliá Castilla',
-          address: 'Calle del Poeta Joan Maragall, 43',
-          city: 'Madrid',
-          country: 'España',
-          gmapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.6269024565067!2d-3.6943040487441863!3d40.46139406074399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1ce794508da5e9d!2sMeli%C3%A1+Castilla!5e0!3m2!1sen!2sno!4v1537421113811',
-        }
-      ,
+        date: '25. oktober - 28. oktober 2018',
+        longDate: '25. oktober - 28. oktober 2018',
+        venue:
+          'Meliá Castilla, Calle del Poeta Joan Maragall, 43, Madrid, España',
+        hotel: 'Meliá Castilla',
+        address: 'Calle del Poeta Joan Maragall, 43',
+        city: 'Madrid',
+        country: 'España',
+        gmapsUrl:
+          'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.6269024565067!2d-3.6943040487441863!3d40.46139406074399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1ce794508da5e9d!2sMeli%C3%A1+Castilla!5e0!3m2!1sen!2sno!4v1537421113811',
+      },
       schedules: [
         {
           day: 'Torsdag 25. Oktober',
@@ -134,29 +135,24 @@ module.exports = {
           ],
         },
       ],
-      talks:
-        {
-          internmeet: {
-            pending: false,
-            speakers:
-              [
-                {
-                  name: 'Jan Henrik Gundelsby',
-                  bio:
-                    'Jan Henrik er fagsjef i Knowit Objectnet. Jobber for tiden litt hos Oslo kommune med arkitektur og prosess. Driver også med salg, marked og hvordan vi skal få de rette nye prosjektene. Glad i naturen og lidenskapelig opptatt av fag!',
-                  email: 'jhg@knowit.no',
-                  pic: 'jhg.jpg',
-                },
-              ],
-            title:
-              'Velkommen og internmøte',
-            type:
-              'Talk',
-            description:
-              'Beskrivelse kommer',
-          },
+      talks: {
+        internmeet: {
+          pending: false,
+          speakers: [
+            {
+              name: 'Jan Henrik Gundelsby',
+              bio:
+                'Jan Henrik er fagsjef i Knowit Objectnet. Jobber for tiden litt hos Oslo kommune med arkitektur og prosess. Driver også med salg, marked og hvordan vi skal få de rette nye prosjektene. Glad i naturen og lidenskapelig opptatt av fag!',
+              email: 'jhg@knowit.no',
+              pic: 'jhg.jpg',
+            },
+          ],
+          title: 'Velkommen og internmøte',
+          type: 'Talk',
+          description: 'Beskrivelse kommer',
         },
-    }
+      },
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',

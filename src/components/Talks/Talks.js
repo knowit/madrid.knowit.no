@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Talk from './Talk';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Talk from './Talk'
 
 const Talks = ({ collectionTitle, entry }) => {
   return (
@@ -11,12 +11,12 @@ const Talks = ({ collectionTitle, entry }) => {
         <Talk talkId={talkId} />
       ))}
     </div>
-  );
-};
+  )
+}
 
 Talks.propTypes = {
   collectionTitle: PropTypes.string.isRequired,
   entry: PropTypes.object,
-};
+}
 
-export default Talks;
+export default Talks

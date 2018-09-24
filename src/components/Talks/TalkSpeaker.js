@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-import Person from '../Icons/Person';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
+import Person from '../Icons/Person'
 
 const TalkSpeaker = ({ speaker, numberOfSpeakers, talkId }) => {
   return (
@@ -17,13 +17,13 @@ const TalkSpeaker = ({ speaker, numberOfSpeakers, talkId }) => {
         {numberOfSpeakers > 1 ? `${speaker.name} med flere` : speaker.name}
       </Link>
     </div>
-  );
-};
+  )
+}
 
 TalkSpeaker.propTypes = {
   speaker: PropTypes.object.isRequired,
   numberOfSpeakers: PropTypes.number.isRequired,
   talkId: PropTypes.string.isRequired,
-};
+}
 
-export default TalkSpeaker;
+export default TalkSpeaker

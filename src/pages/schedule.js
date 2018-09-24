@@ -3,43 +3,43 @@ import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Slot from '../components/Slot';
+import Slot from '../components/Slot'
 import './schedule.css'
 
 class SchedulePage extends React.Component {
   constructor(props) {
-    super(props);
-    this.onDayClick = this.onDayClick.bind(this);
+    super(props)
+    this.onDayClick = this.onDayClick.bind(this)
     this.state = {
       activeIndex: 0,
-    };
+    }
   }
 
   onDayClick(e, index) {
     this.setState({ activeIndex: index })
   }
 
-  render () {
+  render() {
     return (
       <StaticQuery
         query={graphql`
-      query SiteScheduleQuery {
-        site {
-          siteMetadata {
-            data {
-              title,
-              schedules {
-                day,
-                collections {
-                  time,
+          query SiteScheduleQuery {
+            site {
+              siteMetadata {
+                data {
                   title
+                  schedules {
+                    day
+                    collections {
+                      time
+                      title
+                    }
+                  }
                 }
               }
             }
           }
-        }
-      }
-    `}
+        `}
         render={data => {
           const { schedules } = data.site.siteMetadata.data
           const activeDay = schedules[this.state.activeIndex]
@@ -50,8 +50,12 @@ class SchedulePage extends React.Component {
                 <div className="schedule page">
                   <h1>Skjema</h1>
                   <div className="nav-button-group">
-                    <Link className="button white" to="/">Forside</Link>
-                    <Link className="button white hidden" to="/speakers/">Talere</Link>
+                    <Link className="button white" to="/">
+                      Forside
+                    </Link>
+                    <Link className="button white hidden" to="/speakers/">
+                      Talere
+                    </Link>
                   </div>
 
                   <div className="button-group button-group-schedule-days">
@@ -59,21 +63,29 @@ class SchedulePage extends React.Component {
                       <button
                         key={`day-${index}`}
                         onClick={evt => this.onDayClick(evt, index)}
-                        className={this.state.activeIndex === index ? 'button active' : 'button'}>
+                        className={
+                          this.state.activeIndex === index
+                            ? 'button active'
+                            : 'button'
+                        }
+                      >
                         {day.day}
                       </button>
                     ))}
                   </div>
                   <div className="container">
                     {activeDay.collections.map(collection => (
-                      <Slot key={`slot-${collection.time}`} collection={collection} />
+                      <Slot
+                        key={`slot-${collection.time}`}
+                        collection={collection}
+                      />
                     ))}
                   </div>
                 </div>
               </div>
             </Layout>
-          )}
-        }
+          )
+        }}
       />
     )
   }

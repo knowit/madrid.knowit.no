@@ -9,12 +9,12 @@ const EmbeddedMap = () => (
       query SiteMapQuery {
         site {
           siteMetadata {
-            title,
+            title
             data {
               event {
-                city,
-                address,
-                hotel,
+                city
+                address
+                hotel
                 gmapsUrl
               }
             }
@@ -24,7 +24,7 @@ const EmbeddedMap = () => (
     `}
     render={data => (
       <div className="google-maps-wrapper">
-        <div className="google-maps-blocker"/>
+        <div className="google-maps-blocker" />
         <div className="google-maps-content">
           <h1>Lokasjon</h1>
           <h3>{data.site.siteMetadata.data.event.hotel}</h3>
