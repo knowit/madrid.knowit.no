@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/madrid.knowit.no',
   siteMetadata: {
     title: 'Knowit Stavanger Fagseminar',
     data: {
