@@ -26,21 +26,21 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-1d275617691f31e5eec5.js"
+    "url": "webpack-runtime-c6858f8df5ef06f35817.js"
   },
   {
-    "url": "app-4a85c3053a8879c8e1d1.js"
+    "url": "app-1d73b4c9be6d768160db.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-8b39cf320710777c95f1.js"
   },
   {
     "url": "index.html",
-    "revision": "17ccca86fceeea47dc3758acb99d3fde"
+    "revision": "d94008b4ce755296bc07470b2f149099"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "83ad6911af4fc89bf51dccaea49f10dc"
+    "revision": "2b41327dfa2dd51189e561b8c17a0656"
   },
   {
     "url": "component---src-pages-index-js.9c670e3a2faaf015cacd.css"
@@ -49,7 +49,7 @@ self.__precacheManifest = [
     "url": "component---src-pages-index-js-55770d207fa60a83f7c4.js"
   },
   {
-    "url": "0-35f5e7d0e38d82d7f181.js"
+    "url": "0-c18ae806983eb9104453.js"
   },
   {
     "url": "static/d/173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -77,7 +77,7 @@ self.__precacheManifest = [
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
+workbox.routing.registerNavigationRoute("/madrid.knowit.no/offline-plugin-app-shell-fallback/index.html", {
   whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
   blacklist: [/\?(.+&)?no-cache=1$/],
 });
