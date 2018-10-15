@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const OtherSlot = ({ collection }) => {
-  console.log('collection', collection)
   return (
     <div className="slot white-background">
       <span className="time">{collection.time}</span>

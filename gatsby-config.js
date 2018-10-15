@@ -70,6 +70,7 @@ module.exports = {
             {
               time: '11:15-12:00',
               title: 'Maskinlæring ting - Truls',
+              link: ''
             },
             {
               time: '12:00-13:00',
