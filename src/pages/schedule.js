@@ -33,6 +33,7 @@ class SchedulePage extends React.Component {
                     collections {
                       time
                       title
+                      link
                     }
                   }
                 }

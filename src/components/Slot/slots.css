@@ -32,7 +32,7 @@
   color: black;
 }
 
-.slot.white-background .title > span {
+.slot.white-background .title > span, .slot.white-background .title a{
   padding: 2rem;
   display: inline-block;
 }

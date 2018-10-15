@@ -24,10 +24,12 @@ module.exports = {
             {
               time: '16:30',
               title: 'Flyet drar fra Stavanger Lufthavn',
+              link: ''
             },
             {
               time: '22:00',
               title: 'Vi ankommer Madrid',
+              link: ''
             },
           ],
         },
@@ -37,27 +39,33 @@ module.exports = {
             {
               time: '07:00-09:00',
               title: 'Frokost',
+              link: ''
             },
             {
               time: '09:00-09:15',
               title: 'Velkommen til MadCon Dev Track - Froddgeir',
+              link: ''
             },
             {
               time: '09:15-09:45',
               title: 'Tales from Altibox - Henrik',
+              link: ''
             },
             {
               time: '09:45-10:15',
               title: 'Update fra JavaZone - Sindre',
+              link: ''
             },
             {
               time: '10:15-11:00',
               title: 'Flutter (Google) - Johan',
+              link: ''
             },
             {
               time: '11:00-11:15',
               title: 'Pause',
               isBreak: true,
+              link: ''
             },
             {
               time: '11:15-12:00',
@@ -67,27 +75,33 @@ module.exports = {
               time: '12:00-13:00',
               title: 'Lunch',
               isBreak: true,
+              link: ''
             },
             {
               time: '13:00-14:00',
               title: 'Kategori Teori - Oddgeir',
+              link: ''
             },
             {
               time: '14:00-15:00',
               title: 'GitOps med JenkinsX på Kubernetes - Frode',
+              link: ''
             },
             {
               time: '15:10-15:15',
               title: 'Pause',
               isBreak: true,
+              link: ''
             },
             {
               time: '15:15-16:15',
               title: 'Azure m.m. - Glenn',
+              link: ''
             },
             {
               time: '16:15-17:00',
               title: 'Espens historietime - Espen',
+              link: ''
             },
           ],
         },
@@ -97,14 +111,17 @@ module.exports = {
             {
               time: '07:00-10:00',
               title: 'Frokost',
+              link: ''
             },
             {
               time: '19:15',
               title: '? Felles avgang til restaurant',
+              link: ''
             },
             {
-              time: '19:30',
-              title: '? Restaurant',
+              time: '20:00',
+              title: 'El Botin',
+              link: 'https://www.google.com/maps?q=C/+de+Cuchilleros,+17++%0D%0A+28005+Madrid"'
             },
           ],
         },
@@ -114,22 +131,27 @@ module.exports = {
             {
               time: '07:00-10:00',
               title: 'Frokost',
+              link: ''
             },
             {
               time: '12:00-13:00',
               title: '? Lunsj',
+              link: ''
             },
             {
               time: '13:00',
               title: '? Avreise til flyplassen',
+              link: ''
             },
             {
               time: '15:25',
               title: 'Fly til Oslo',
+              link: ''
             },
             {
               time: '20:45',
               title: 'Fly til Stavanger',
+              link: ''
             },
           ],
         },
