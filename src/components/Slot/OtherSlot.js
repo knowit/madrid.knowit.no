@@ -8,10 +8,9 @@ const OtherSlot = ({ collection }) => {
       <div className="title">
         {collection.link && collection.link.length > 0 ? (
           <a href={collection.link}>{collection.title}</a>
-          ) : (
-            <span>{collection.title}</span>
-          )
-        }
+        ) : (
+          <span>{collection.title}</span>
+        )}
       </div>
     </div>
   )
