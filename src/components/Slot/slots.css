@@ -10,20 +10,29 @@
 
 .slot .time {
   align-self: center;
-  width: 10%;
+  width: 110px;
 }
 
 .slot .title {
   padding: 1rem 0;
   font-weight: bold;
-  width: 90%;
 }
 
+.slot .half {
+  width: 50%;
+}
 
-.slot.gray-background .title {
-    text-align: center;
-    background-color: var(--gray-1);
-    color: black;
+.slot .full {
+  width: 100%;
+}
+
+.slot.break {
+  background-color: var(--gray-1);
+  padding: 0 20px;
+}
+
+.slot.break .title {
+  text-align: center;
 }
 
 .slot.white-background .title {

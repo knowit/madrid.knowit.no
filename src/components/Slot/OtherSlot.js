@@ -1,17 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const OtherSlot = ({ collection }) => {
-  return (
-    <div className="slot white-background">
-      <span className="time">{collection.time}</span>
-      <div className="title">
-        {collection.link && collection.link.length > 0 ? (
-          <a href={collection.link}>{collection.title}</a>
+function renderSlot(title, link, classes) {
+    return (
+      <div className={`title ${classes}`}>
+        {link && link.length > 0 ? (
+          <a href={link}>{title}</a>
         ) : (
-          <span>{collection.title}</span>
+          <span>{title}</span>
         )}
       </div>
+  )
+}
+
+const OtherSlot = ({ collection }) => {
+  const { title, titleS, time, link } = collection
+  const extraClass = titleS ? 'half' : 'full'
+  return (
+    <div className="slot white-background">
+      <span className="time">{time}</span>
+      {renderSlot(title, link, extraClass)}
+      {titleS ? renderSlot(titleS, link, extraClass) : null}
     </div>
   )
 }

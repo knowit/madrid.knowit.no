@@ -27,7 +27,7 @@ module.exports = {
               link: ''
             },
             {
-              time: '22:00',
+              time: '22:25',
               title: 'Vi ankommer Madrid',
               link: ''
             },
@@ -35,6 +35,7 @@ module.exports = {
         },
         {
           day: 'Fredag 26. Oktober',
+          showHeader: true,
           collections: [
             {
               time: '07:00-09:00',
@@ -44,21 +45,25 @@ module.exports = {
             {
               time: '09:00-09:15',
               title: 'Velkommen til MadCon Dev Track - Froddgeir',
+              titleS: 'Velkommen',
               link: ''
             },
             {
               time: '09:15-09:45',
               title: 'Tales from Altibox - Henrik',
+              titleS: 'Sjekkliste: viktige faktorer for en vellykket nettside (Del I)',
               link: ''
             },
             {
               time: '09:45-10:15',
               title: 'Update fra JavaZone - Sindre',
+              titleS: 'Sjekkliste: viktige faktorer for en vellykket nettside (Del II)',
               link: ''
             },
             {
-              time: '10:15-11:00',
+              time: '10:20-11:00',
               title: 'Flutter (Google) - Johan',
+              titleS: 'Søkemotoroptimalisering metoder som fungerer!',
               link: ''
             },
             {
@@ -70,22 +75,25 @@ module.exports = {
             {
               time: '11:15-12:00',
               title: 'Maskinlæring ting - Truls',
+              titleS: 'Hvorfor bruke Instagram?',
               link: ''
             },
             {
               time: '12:00-13:00',
+              title: 'Kategori Teori - Oddgeir',
+              titleS: 'Google Shopping for nettbutikker',
+              link: ''
+            },
+            {
+              time: '13:00-14:00',
               title: 'Lunch',
               isBreak: true,
               link: ''
             },
             {
-              time: '13:00-14:00',
-              title: 'Kategori Teori - Oddgeir',
-              link: ''
-            },
-            {
               time: '14:00-15:00',
               title: 'GitOps med JenkinsX på Kubernetes - Frode',
+              titleS: 'Videoannonsering på YouTube',
               link: ''
             },
             {
@@ -97,12 +105,17 @@ module.exports = {
             {
               time: '15:15-16:15',
               title: 'Azure m.m. - Glenn',
+              titleS: 'Oppsummerende refleksjoner og diskusjon',
               link: ''
             },
             {
               time: '16:15-17:00',
               title: 'Espens historietime - Espen',
-              link: ''
+            },
+            {
+              time: '20:15',
+              title: 'Middag: Saporem, Ventura de la Vega 5',
+              link: 'http://the-saporem.tumblr.com/'
             },
           ],
         },
@@ -121,7 +134,7 @@ module.exports = {
             },
             {
               time: '20:00',
-              title: 'El Botin',
+              title: 'Middag: El Botin',
               link: 'https://www.google.com/maps?q=C/+de+Cuchilleros,+17++%0D%0A+28005+Madrid"'
             },
           ],
