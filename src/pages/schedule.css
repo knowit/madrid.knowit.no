@@ -1,3 +1,18 @@
 .schedule {
   background-color: var(--gray-2);
 }
+
+.schedule .trackhead {
+  display: flex;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.schedule .trackhead .time {
+  width: 110px;
+}
+
+.schedule .trackhead .track {
+  text-align: center;
+  width: 50%;
+}

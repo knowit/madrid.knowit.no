@@ -30,9 +30,12 @@ class SchedulePage extends React.Component {
                   title
                   schedules {
                     day
+                    showHeader
                     collections {
                       time
+                      isBreak
                       title
+                      titleS
                       link
                     }
                   }
@@ -75,6 +78,12 @@ class SchedulePage extends React.Component {
                     ))}
                   </div>
                   <div className="container">
+                    { activeDay.showHeader ? (
+                    <div className="trackhead">
+                      <div className="time">Tid</div>
+                      <div className="track">Tech track</div>
+                      <div className="track">Synlighet track</div>
+                    </div>) : null }
                     {activeDay.collections.map(collection => (
                       <Slot
                         key={`slot-${collection.time}`}
