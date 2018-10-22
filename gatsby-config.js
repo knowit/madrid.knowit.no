@@ -27,7 +27,7 @@ module.exports = {
               link: ''
             },
             {
-              time: '22:00',
+              time: '22:25',
               title: 'Vi ankommer Madrid',
               link: ''
             },
